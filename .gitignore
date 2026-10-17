@@ -1,0 +1,37 @@
+# ============ 图片原图 ============
+# 处理前的原图，压缩完就删，绝不进仓库
+raw/
+
+# ============ Python 虚拟环境 ============
+# 依赖包几百 MB，且和系统相关，别人 clone 后用 requirements.txt 自己装
+venv/
+.env/
+
+# Python 运行时缓存
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# ============ MkDocs 生成物 ============
+# 有 docs/ 就能重建，提交它只会让仓库膨胀
+site/
+
+# ============ 编辑器 / IDE ============
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ============ 操作系统垃圾 ============
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# ============ 敏感信息（以后配密钥/API Token 时别手滑）============
+*.key
+*.pem
+secrets.yaml
+.env.local
